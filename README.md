@@ -21,10 +21,15 @@ Use Docker
   GET /
 ```
 
-#### Get all items
+#### Add one item
 
 ```
-  GET /
+  POST /additem
+  
+  ```
+  { "item" : "Any item you want to add" }
+  
+  ```
 ```
 #### Get all items
 
