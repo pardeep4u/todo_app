@@ -35,8 +35,27 @@ Example
   POST /additem
   
 ```
-#### Get all items
+#### delete One item
 
 ```
-  GET /
+  DELETE /delete/<ID OF OBJECT>
 ```
+
+#### Delete all items
+
+```
+  DELETE /deleteall
+```
+
+#### UPDATE one item
+Send body in json format with a key of ```item``` and and value
+Example
+```
+{
+    "item":"Any value"
+}
+
+```
+PUT /update/<ID OF OBJECT>
+```
+
