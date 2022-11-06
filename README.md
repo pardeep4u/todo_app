@@ -7,8 +7,8 @@
     
 ## Technolgies and patters
 
-Uses typescript [/] [*]
-Uses mongoDB cloud [*]
-Uses MVC [*]
-Uses Swagger for DOCS [*]
+Uses typescript 
+Uses mongoDB cloud 
+Uses MVC 
+Uses Swagger for DOCS 
 Use Docker 
