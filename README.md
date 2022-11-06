@@ -18,19 +18,16 @@ Use Docker
 #### Get all items
 
 ```
-http
   GET /
 ```
 
 #### Get all items
 
 ```
-http
   GET /
 ```
 #### Get all items
 
 ```
-http
   GET /
 ```
