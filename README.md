@@ -54,7 +54,7 @@ Example
 {
     "item":"Any value"
 }
-
+```
 ```
 PUT /update/<ID OF OBJECT>
 ```
