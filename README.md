@@ -24,6 +24,12 @@ Use Docker
 #### Add one item
 
 Send body in json format with a key of ```item``` and and value
+Example
+```
+{
+    "item":"Any value"
+}
+```
 
 ```
   POST /additem
