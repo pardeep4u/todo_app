@@ -1,0 +1,97 @@
+swagger: "2.0"
+info:
+  title: "Swagger Documentation for TODO app"
+  description : "Here all the API are specified with their end point and HTTP methods to use these API."
+  version : 1.0
+  contact :
+    email : "pardeepkumar97070@gmail.com"
+  servers : 
+    -url : "http://localhost:3000"
+schemes : [http]
+
+
+
+paths : 
+  /:
+    get:
+      summary: "Get all TODO task"
+      description: " '/' will return all Stored todo task with their object ID ( _id ) "
+      responses:
+        200:
+          description: "Success"
+          schema:
+            type: JSON
+            example: [{"_id":"636741d4c05c4d05f5984df2","name":"i dont know how to talk her","__v":0}]
+        500:
+          description: "Something went worng!"
+
+
+  /additem:
+    post:
+      summary: "To add a TODO task"
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+      - in: body
+        name: item
+        schema:
+          type: object
+      responses:
+        200:
+          description: "ADDED SUCCESFULLY"
+        500:
+          description: "Something went wrong"
+
+
+  /delete/{id}:
+    delete:
+      summary: "To Delete task from TODO"
+      description: " '/delete/{id}' will return JSON object "
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: "deleted SUCCESFULLY"
+        500:
+          description: "Something went wrong"
+
+
+  /deleteAll:
+    delete:
+      summary: "To Delete ALL task from TODO"
+      description: " '/deleteAll' will return JSON object with a message "
+      responses:
+        200:
+          description: "deleted all SUCCESFULLY"
+        500:
+          description: "Something went wrong"
+
+  /update/{id}:
+    put:
+      summary: "To add a TODO task"
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+      - in: body
+        name: item
+        schema:
+          type: object
+      - in: path
+        name: id
+        required: true
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: "UPDATED SUCCESFULLY"
+        500:
+          description: "Something went wrong"
