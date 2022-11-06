@@ -26,10 +26,10 @@ Use Docker
 ```
   POST /additem
   
-  ```
+
   { "item" : "Any item you want to add" }
   
-  ```
+
 ```
 #### Get all items
 
