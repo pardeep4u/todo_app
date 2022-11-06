@@ -13,6 +13,12 @@ Uses MVC
 Uses Swagger for DOCS 
 Use Docker 
 
+### To get API DOCS 
+
+```
+GET http://localhost/api_docs
+```
+
 ## API Reference
 
 #### Get all items
