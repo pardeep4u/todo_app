@@ -12,3 +12,11 @@ Uses mongoDB cloud
 Uses MVC 
 Uses Swagger for DOCS 
 Use Docker 
+
+## API Reference
+
+#### Get all items
+
+```http
+  GET /
+```
