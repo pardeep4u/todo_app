@@ -23,13 +23,11 @@ Use Docker
 
 #### Add one item
 
+Send body in json format with a key of ```item``` and and value
+
 ```
   POST /additem
   
-
-  { "item" : "Any item you want to add" }
-  
-
 ```
 #### Get all items
 
